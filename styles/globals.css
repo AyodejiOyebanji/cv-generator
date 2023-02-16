@@ -1,0 +1,334 @@
+.hero{
+  width:100%;
+  height:100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 48%, 0 66%);
+  background-color: black;
+  
+
+}
+.heroBigText{
+  font-size:7vh;
+  margin-top:5vh;
+}
+.herosmallText{
+  font-size:3vh;
+}
+.buildBtn{
+  outline: none;
+  border:none;
+  height:7vh;
+  background-color: rgb(29, 16, 210);
+  color:white;
+  width:40%;
+  font-weight:600;
+
+}
+
+/* name section starts here */
+.whole{
+  height: 100vh;
+  weight:100%;
+  background-color:#F7FAFB;
+}
+.formSide{
+  margin-top:10vh;
+  height: 80vh;
+  weight:90%;
+  background-color:#FFFFFF;
+}
+.letsText{
+  font-size:7vh;
+}
+.inputSection{
+  background-color:#F7FAFB;
+  height:40vh;
+  width:100%;
+}
+.formDes{
+  font-size:3vh;
+}
+.fullNameInp{
+  height:7vh;
+  width:100%;
+}
+.startedBtn{
+  outline: none;
+  border:none;
+  height:7vh;
+  background-color: rgb(29, 16, 210);
+  color:white;
+  width:40%;
+  font-weight:600;
+}
+/* experience */
+.expText{
+  font-size:4vh;
+}
+.expBtn{
+  height:10vh;
+  width:30%;
+  
+
+}
+.expDes{
+  font-size:2.5vh;
+}
+
+.expstage{
+  height:12vh;
+  width:25%;
+  background:blue;
+}
+
+/* work sector */
+.jobBtn{
+  background-color:transparent;
+  border-radius:30px;
+  border:3px solid blue
+}
+.plus{
+  font-size:20px;
+
+}
+.conInp{
+  width: 100%;
+  height: 5vh;
+}
+
+/* experience tip */
+.expTipSec{
+  margin-top:30vh;
+}
+
+/* review */
+
+.addPosition{
+  background-color:transparent;
+  width:100%;
+  height:6vh;
+
+  border:2px solid green;
+}
+
+/* cv */
+.body{
+  background-color:#F7FAFB;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+
+}
+.cv{
+  position:relative;
+  width:100%;
+  max-width:1000px;
+  min-height:1000px;
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  margin:50px;
+ 
+
+
+}
+.profileText{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:20px;
+  border-bottom:1px solid gray;
+}
+.profileText .imageBox{
+  position:relative;
+  width:200px;
+  height:200px ;
+  border-radius:50%;
+  overflow:hidden;
+}
+.profileText .imageBox Image{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+} 
+.profileText h2{
+  color:#fff;
+  font-size:1.5em;
+  margin-top:20px;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:600;
+  line-height:1.4em
+}
+
+.profileText h2 span{
+  font-size:0.8em;
+  font-weight:300;
+}
+.contactInfo{
+  padding-top:40px;
+
+}
+.title{
+  color:#fff;
+  text-transform:uppercase;
+  font-weight:600;
+  letter-spacing: 1px;
+
+
+}
+.contactInfo ul{
+  position:relative;
+
+}
+.contactInfo ul li{
+  position:relative;
+  list-style:none;
+  margin:10px 0;
+  cursor:pointer;
+  
+}
+.contactInfo ul li .icon{
+    display:inline-block;
+    width:30px;
+    font-size:18px;
+    color:white;
+
+  
+}
+.contactInfo ul li span{
+  color:white;
+}
+.contactInfo.education li{
+    margin-bottom:15px;
+    
+}
+.contactInfo.education h5{
+   color:#03a9f4;
+   font-weight:500;
+
+}
+.contactInfo.education h4: nth-child(2){
+  color:#fff;
+  font-weight:500;
+
+}
+.contactInfo.education h4{
+  color:#fff;
+  font-weight:300;
+
+}
+.contactInfo.language .percent{
+position:relative;
+width:100%;
+heigt: 6px;
+background:red;
+display:block;
+margin-top:5px;
+}
+
+.cv .left_side{
+  position:relative;
+  background:blue;
+  padding:40px
+}
+.cv .right_side{
+  position:relative;
+  background:white;
+  padding:40px
+}
+.about{
+  margin-bottom:50px;
+  
+}
+.about:last-child{
+  margin-bottom:0px;
+  
+}
+.title_two{
+  color:#003147;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:10px;
+
+}
+.about.box{
+  display:flex;
+  flex-direction:row;
+  margin:20px 0;
+}
+.about .box .year_company{
+  min-width:150px;
+}
+.about .box .year_company h5{
+  text-transform:uppercase;
+  color:#848c90;
+  font-weight:600;
+
+}
+.about .box .text h4 {
+  text-transform:uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.skills .box {
+  position:relative;
+  width:100%;
+  display:grid;
+  grid-template-columns:150px 1fr;
+  justify-content:center;
+  align-items:center;
+}
+.skills .box h4{
+text-transform:uppercase;
+color:#848c99;
+font-weight:500;
+
+
+}
+.skills .box .percent{
+  position:relative;
+  width:80%;
+  height:10px;
+  background:#f0f0f0;
+  margin-left:6vh;
+}
+.skills .box .percent div{
+  position:relative;
+ top:0;
+ left:0;
+ height:100%;
+ background:#03a9fa;
+ width:95%
+}
+  
+.interest{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.interest ul{
+  display:flex;
+}
+.interest ul li {
+  list-style:none;
+  padding:5px;
+  margin-top:30px;
+  
+  
+}
+
+.image-upload>input {
+  display: none;
+}
+.uploadImgReal{
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
