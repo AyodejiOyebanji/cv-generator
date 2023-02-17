@@ -17,7 +17,7 @@ function Expdesc() {
     if (!moreDetails) {
       router.push('/experience');
     }
-  });
+  },[moreDetails,router]);
   const formik = useFormik({
     initialValues: {
       desc: '',

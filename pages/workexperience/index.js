@@ -30,7 +30,7 @@ function Index() {
     if ( !detail?.fullname) {
       router.push("/name");
     }
-  },);
+  },[detail,router]);
   const dispatch = useDispatch();
   const getStarted = (item) => {
     dispatch(AddUser({"workExpType":item}))

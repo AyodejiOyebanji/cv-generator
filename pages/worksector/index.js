@@ -19,7 +19,7 @@ function Index() {
     if (!detail?.workExpType) {
       router.push('/workexperience');
     }
-  });
+  },[router,detail]);
   const sec = (e) => {
     dispatch(AddUser({ worksector: e }));
     router.push('/Contact');

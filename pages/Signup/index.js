@@ -17,7 +17,7 @@ const Signup = () => {
     if (!detail?.name) {
       useroute.push("/Contact");
     }
-  },);
+  },[detail, useroute]);
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -31,6 +31,7 @@ const Signup = () => {
           useroute.push("/Login")
         }else{
           seterrorMsg(res.data.message)
+          console.log(res)
         }
         setIsloading(false)
       });

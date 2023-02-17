@@ -31,7 +31,7 @@ const Edureview = () => {
       if(arrayOfDetails.length==0){
         router.push("/education/edudetails")
       }
-    },)
+    },[arrayOfDetails,router])
     const addPosition=()=>{
       router.push("/education/edudetails")
     }

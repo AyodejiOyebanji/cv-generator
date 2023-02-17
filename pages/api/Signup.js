@@ -22,7 +22,7 @@ export default function handler(req, res) {
               });
             })
             .catch((err) => {
-              res.send({ message: "Something went wrong", status: false });
+              res.send({ message: "Something went wrong", status: false, err });
               console.log(err);
             });
         }

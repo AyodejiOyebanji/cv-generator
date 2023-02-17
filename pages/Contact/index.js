@@ -16,7 +16,7 @@ function Contact() {
     if(!detail?.worksector){
       router.push("/worksector")
     }
-  },);
+  },[detail,router]);
   const [errorMsg, setErrorMsg] = useState("");
   const formik = useFormik({
     initialValues: {

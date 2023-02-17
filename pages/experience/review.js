@@ -20,7 +20,7 @@ function Review() {
     if (array.length == 0) {
       router.push('/experience/expdescrip');
     }
-  }, );
+  },[array,router] );
 
   const getStarted = () => {
     setIsloading(true);
