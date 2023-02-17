@@ -35,6 +35,7 @@ function Review() {
           router.push('/cv');
           dispatch(Reset());
           dispatch(userReset());
+          router.push('/education');
         } else {
           setmsg(res.data.message);
         }
