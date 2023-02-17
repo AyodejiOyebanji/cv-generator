@@ -19,7 +19,7 @@ function Index() {
     if (!detail?.workExpType) {
       router.push('/workexperience');
     }
-  }, );
+  });
   const sec = (e) => {
     dispatch(AddUser({ worksector: e }));
     router.push('/Contact');
@@ -53,7 +53,8 @@ function Index() {
                           type="submit"
                           onClick={(e) => sec(val)}
                           className="jobBtn text-primary m-2"
-                        key={val}>
+                          key={val}
+                        >
                           <span className="plus">+</span> {val}
                         </button>
                       ))}
@@ -76,4 +77,4 @@ function Index() {
     </div>
   );
 }
-Index;
+export default Index;
