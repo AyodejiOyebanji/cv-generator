@@ -55,7 +55,7 @@ function Experience() {
                             <div className="formSide p-5">
                               
                               <h2>Job Details</h2>
-                              <p>Let's start with your most recent job</p>
+                              <p>Lets start with your most recent job</p>
                              <label htmlFor="">Job title</label>
                              <input type="" name="jobTitle"  onChange={formik.handleChange} onBlur={formik.handleBlur} className='conInp'/>
                              <label htmlFor="">Employer</label>

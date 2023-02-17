@@ -23,14 +23,14 @@ let allExperience = [
   },
 ];
 
-function index() {
+function Index() {
   let router = useRouter();
   const { detail } = useSelector((state) => state.details);
   useEffect(() => {
     if ( !detail?.fullname) {
       router.push("/name");
     }
-  },[]);
+  },);
   const dispatch = useDispatch();
   const getStarted = (item) => {
     dispatch(AddUser({"workExpType":item}))
@@ -52,15 +52,16 @@ function index() {
                     <h4 className="text-primary">
                       Nice to meet you, {detail && detail.fullname}
                     </h4>
-                    <h1 className="expText">What's your work experience?</h1>
+                    <h1 className="expText">What is your work experience?</h1>
 
                     <div className="inputSection">
                       <p className="expDes p-3">
-                        We'll get a better idea of your resume needs based on
+                        We will get a better idea of your resume needs based on
                         your selection.
                       </p>
                       {allExperience.map((val) => (
                         <button
+                          key={val}
                           className="expBtn btn btn-primary m-2"
                           onClick={() => getStarted(Object.keys(val)[0])}
                         >
@@ -82,4 +83,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

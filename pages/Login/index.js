@@ -100,7 +100,7 @@ const Signup = () => {
                           </button>
                         </div>
                         <div className="text-center mt-5">
-                          <Link href="/name">Dont't have account? Create !</Link>
+                          <Link href="/name">Dont have account? Create !</Link>
                         </div>
                       </form>
                     </div>

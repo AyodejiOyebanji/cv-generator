@@ -3,7 +3,7 @@ import {useRouter} from 'next/router';
 import {useCookies} from "react-cookie"
 import useCheckUser from "../../customHook/useCheckUser"
 import Head from "next/head";
-const index = () => {
+const Index = () => {
     let router= useRouter()
     const [cookies,setCookies]=useCookies(["userToken"])
     const [user]=useCheckUser(cookies?.userToken);
@@ -23,9 +23,9 @@ const index = () => {
                       <div className="row">
                           <div className="col-sm-12 col-md-12 col-lg-6">
                             <div className="expTipSec p-5">
-                              <h6 className="fw-bold">Let's get into</h6>
+                              <h6 className="fw-bold">Lets get into</h6>
                               <h2 className="fw-bold">Skills</h2>
-                              <p >We'll help you showcase a short list of skills you've developed throughout your experience - a quick way for potential employers to see if you are a good fit.</p>
+                              <p >We well help you showcase a short list of skills you have developed throughout your experience - a quick way for potential employers to see if you are a good fit.</p>
                               
                              <div className="d-flex justify-content-end mt-4">
                                   <button className="startedBtn" onClick={getStarted}>Next</button>
@@ -55,6 +55,6 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
 
 

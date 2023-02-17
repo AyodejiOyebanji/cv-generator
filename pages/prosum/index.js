@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useCookies } from "react-cookie";
 import useCheckUser from "../../customHook/useCheckUser";
 import Head from "next/head";
-function index() {
+function Index() {
   let router = useRouter();
   const [cookies, setCookies] = useCookies(["userToken"]);
   const [user] = useCheckUser(cookies?.userToken);
@@ -24,12 +24,12 @@ function index() {
                 <div className="row">
                   <div className="col-sm-12 col-md-12 col-lg-6">
                     <div className="expTipSec p-5">
-                      <h6 className="fw-bold">Let's wrap it up with </h6>
+                      <h6 className="fw-bold">Lets wrap it up with </h6>
                       <h2 className="fw-bold">Professional Summary</h2>
                       <p>
                         A professional summary appears at the top of your resume
-                        at 2-3 impactual sentences. It's one of the first things
-                        hiring managers see, so we'll help you write a great
+                        at 2-3 impactual sentences. Its one of the first things
+                        hiring managers see, so we will help you write a great
                         one.
                       </p>
 
@@ -51,4 +51,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

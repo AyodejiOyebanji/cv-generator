@@ -17,7 +17,7 @@ const Signup = () => {
     if (!detail?.name) {
       useroute.push("/Contact");
     }
-  },[]);
+  },);
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -55,7 +55,7 @@ const Signup = () => {
                       className="col-sm-12 col-md-12 col-lg-6  mx-auto "
                     >
                       <div className="formSide p-5 shadow">
-                        <h1>Don't lose your hard work!</h1>
+                        <h1>Dont lose your hard work!</h1>
                         <p>Create an account so we can save your progress.</p>
                         {errorMsg ? (
                           <div className="alert alert-danger text-center">

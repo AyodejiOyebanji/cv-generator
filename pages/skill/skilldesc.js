@@ -15,7 +15,7 @@ const listOfSkill = [
   "Management",
   "Tolerance",
 ];
-const skilldesc = () => {
+const Skilldesc = () => {
   let router = useRouter();
   const [cookies,setCookies]=useCookies(["userToken"])
   const [user]=useCheckUser(cookies?.userToken);
@@ -56,7 +56,7 @@ const skilldesc = () => {
                   <div className="formSide p-5">
                     <h4 className="text-primary">Skills</h4>
                     <h1 className="expText">
-                      List's find 6-8 of you top skills to highlight
+                      List  6-8 of you top skills to highlight
                     </h1>
 
                     <div className="inputSection">
@@ -91,7 +91,7 @@ const skilldesc = () => {
                           <span>List of your skills</span>
                           {
                           userSkills.map((val,index)=>(
-                            <div className="text-muted">
+                            <div className="text-muted" key={val}>
                               {index+1} {val}
                             </div>
                           ))
@@ -123,4 +123,4 @@ const skilldesc = () => {
   );
 };
 
-export default skilldesc;
+export default Skilldesc;
