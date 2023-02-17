@@ -57,11 +57,7 @@ const UserSchema = mongoose.Schema({
     type:String,
     default:"",
   },
-  image:{
-    type:String,
-    required:true,
-    
-  }
+ 
 });
 
 export const UserModel=mongoose.models.users_tb||mongoose.model("users_tb",UserSchema)

@@ -31,7 +31,7 @@ const Signup = () => {
           useroute.push("/Login")
         }else{
           seterrorMsg(res.data.message)
-          console.log(res)
+         
         }
         setIsloading(false)
       });
