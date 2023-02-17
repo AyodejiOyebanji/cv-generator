@@ -3,7 +3,7 @@ import {useRouter} from 'next/router';
 import {AddUser} from "../../Redux/UserSlice" ;
 import {useDispatch} from "react-redux";
 import Head from "next/head"
-function index() {
+function Index() {
   let router= useRouter();
   const dispatch=useDispatch();
   const [fullname, setFullname] = useState("")
@@ -36,7 +36,7 @@ function index() {
                             <div className="formSide p-5">
                               {errorMsg?<div className="alert alert-danger text-center">{errorMsg}</div>:""}
                               <h4 className="text-primary">Welcome!</h4>
-                              <h1 className="letsText">Let's build a resume that gets you hired.</h1>
+                              <h1 className="letsText">Lets build a resume that gets you hired.</h1>
 
                               <div className="inputSection">
                                 <p className="formDes p-3">Enter your name as you would like it to appear on your resume.</p>
@@ -45,7 +45,7 @@ function index() {
                                 <input type="text" className="fullNameInp " placeholder="Full name"  onChange={(e)=>setFullname(e.target.value)}/>
                                 <hr/>
                                 <div className="d-flex justify-content-end">
-                                  <button className="startedBtn" onClick={getStarted}>Let's get started </button>
+                                  <button className="startedBtn" onClick={getStarted}>Lets get started </button>
                                 </div>
                                 </div>
 
@@ -75,4 +75,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

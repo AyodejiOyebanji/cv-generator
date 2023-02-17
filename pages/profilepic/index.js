@@ -4,7 +4,7 @@ import { AddUser } from '../../Redux/UserSlice';
 import { useDispatch } from 'react-redux';
 import Head from 'next/head';
 import Image from 'next/image';
-function index() {
+function Index() {
   let router = useRouter();
   const [imageState, setimageState] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
@@ -97,4 +97,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

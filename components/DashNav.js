@@ -7,7 +7,7 @@ const DashNav = () => {
       <nav class="navbar bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <Image scr="/" />
+            <Image scr="/" alt="" />
           </a>
         </div>
       </nav>

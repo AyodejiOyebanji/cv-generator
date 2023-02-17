@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addEducationDetails } from "../../Redux/education";
 import { useCookies } from 'react-cookie';
 import useCheckUser from "../../customHook/useCheckUser"
-function edudetails() {
+function Edudetails() {
   let router = useRouter();
   const [cookies,setCookies]=useCookies(["userToken"])
   const [user]=useCheckUser(cookies?.userToken);
@@ -135,4 +135,4 @@ function edudetails() {
   );
 }
 
-export default edudetails;
+export default Edudetails;

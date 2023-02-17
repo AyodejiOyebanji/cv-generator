@@ -16,7 +16,7 @@ function Contact() {
     if(!detail?.worksector){
       router.push("/worksector")
     }
-  }, []);
+  },);
   const [errorMsg, setErrorMsg] = useState("");
   const formik = useFormik({
     initialValues: {
@@ -68,10 +68,10 @@ function Contact() {
                       ) : (
                         ""
                       )}
-                      <h6>Let's start with </h6>
+                      <h6>Lets start with </h6>
                       <h4>Contact Information</h4>
                       <p>
-                        It's best to share at least your name, email, and phone
+                        Its best to share at least your name, email, and phone
                       </p>
                       <label for="">Name</label>
                       <input

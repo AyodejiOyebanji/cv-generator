@@ -7,7 +7,7 @@ import useCheckUser from "../../customHook/useCheckUser"
 import Loading from "../../components/Loading"
 import {Reset} from "../../Redux/currentUserState"
 
-const edureview = () => {
+const Edureview = () => {
   let router= useRouter()
   const {arrayOfDetails}=useSelector((state)=>state.education)
   const [cookies,setCookies]=useCookies(["userToken"])
@@ -31,7 +31,7 @@ const edureview = () => {
       if(arrayOfDetails.length==0){
         router.push("/education/edudetails")
       }
-    },[])
+    },)
     const addPosition=()=>{
       router.push("/education/edudetails")
     }
@@ -51,7 +51,7 @@ const edureview = () => {
                               <hr/>
                               {
                                 arrayOfDetails.map((val,index)=>(
-                                  <main className='mt-3'>
+                                  <main className='mt-3' key={val}>
                                   <span className="fw-bold text-dark">{index+1}.<span className="fw-bold text-secondary">{val.schoolName}</span></span> <br/>
                                   <small className="mx-3">{val.degree}</small><br/>
                                   </main>
@@ -91,4 +91,4 @@ const edureview = () => {
   )
 }
 
-export default edureview
+export default Edureview

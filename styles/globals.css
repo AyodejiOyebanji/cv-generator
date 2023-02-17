@@ -27,13 +27,13 @@
 /* name section starts here */
 .whole{
   height: 100vh;
-  weight:100%;
+  width:100%;
   background-color:#F7FAFB;
 }
 .formSide{
   margin-top:10vh;
   height: 80vh;
-  weight:90%;
+  width:90%;
   background-color:#FFFFFF;
 }
 .letsText{
@@ -212,10 +212,9 @@
    font-weight:500;
 
 }
-.contactInfo.education h4: nth-child(2){
-  color:#fff;
-  font-weight:500;
-
+.contactInfo .education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
 }
 .contactInfo.education h4{
   color:#fff;
@@ -225,7 +224,7 @@
 .contactInfo.language .percent{
 position:relative;
 width:100%;
-heigt: 6px;
+height: 6px;
 background:red;
 display:block;
 margin-top:5px;

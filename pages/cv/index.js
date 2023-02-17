@@ -71,7 +71,7 @@ function Cv() {
           <div className="contactInfo education">
             <h3 className="title">Education</h3>
             {user?.educationDetail.map((val)=>(
-              <ul>
+              <ul key={val}>
                  <h5>{val.graduationYear}</h5>
                <h4 class="text-light">{val.degree
 } in {val.fieldOfStudy}</h4>
@@ -114,7 +114,7 @@ function Cv() {
             <div boxclassName="box">
               {
                 user?.jobDetails.map((val)=>(
-              <div className="year_company">
+              <div className="year_company" key={val}>
                 <h5>{val.startYear} - {val.endYear}</h5>
                 <h5>{val.employer
 }, {val.city}, {val.state}</h5>
@@ -148,7 +148,7 @@ function Cv() {
         <div  className="skills">
           <h2 className="title2">Professional Skills</h2>
           {user?.skills.map((val)=>(
-          <div className="box">
+          <div className="box" key={val}>
           <h4>{val}</h4>
           <div className="percent">
           <div ></div>
@@ -176,7 +176,7 @@ function Cv() {
         
 {
   user?.skills.map((val)=>(
-  <ul>
+  <ul key={val}>
        <li className="text-muted"> <h5>{val}</h5> </li>
   </ul>
   ))
